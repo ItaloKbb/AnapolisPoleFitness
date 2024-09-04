@@ -119,8 +119,19 @@ body {
     justify-content: center;
 }
 
-.section__localizacao{
+.section__localizacao {
     border-radius: 8px;
+}
+
+/* Preço */
+.container_preco {
+    width: 70%;
+}
+
+.preco {
+    display: flex;
+    justify-content: center;
+
 }
 
 /* Agende uma Aula */
