@@ -1,0 +1,175 @@
+/* Reset básico para garantir consistência */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #620f72;
+}
+
+/* Container padrão para centralizar conteúdo */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Navbar */
+
+
+/* Hero Section */
+.hero {
+    background: url('../images/hero-bg.jpg') no-repeat center center/cover;
+    color: #620f72;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.hero__title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero__subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.hero__cta {
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    font-size: 1.25rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.hero__cta:hover {
+    background-color: #0056b3;
+}
+
+/* Seções Gerais */
+.section__title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #333;
+}
+
+.section__description {
+    font-size: 1.125rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #666;
+}
+
+/* Sobre Nós */
+.sobre-nos {
+    padding: 3rem 0;
+    background-color: #f4f4f4;
+}
+
+/* Conheça Nossos Colaboradores */
+.colaboradores {
+    padding: 3rem 0;
+}
+
+.colaboradores__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.colaboradores__item {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+}
+
+.colaboradores__img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.colaboradores__name {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.colaboradores__role {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Localização */
+.localizacao {
+    padding: 3rem 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+}
+
+.section__localizacao{
+    border-radius: 8px;
+}
+
+/* Agende uma Aula */
+.agendar {
+    padding: 3rem 0;
+}
+
+.agendar__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.agendar__label {
+    font-size: 1rem;
+    color: #333;
+}
+
+.agendar__input {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.agendar__button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 0.75rem;
+    font-size: 1.25rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.agendar__button:hover {
+    background-color: #218838;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.footer__text {
+    font-size: 0.875rem;
+}
