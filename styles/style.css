@@ -1,10 +1,13 @@
 :root {
-  --primary-color: #8d168d;
+  --primary-color: #5d2a97;
   --primary-color-hover: #6d0c6d;
-  --secondary-color: #5d2a97;
+  --secondary-color: #8d168d;
   --text-color: #300652;
   --background-color1: #faebfa;
   --background-color2: #e1d6fc;
+  --background-degrade1: linear-gradient(to right, #ff66b2, #a64dff, #66b3ff);
+  --background-degrade2: linear-gradient(to right, #faebfa, #cbbcf0, #a8c5e2);
+
 }
 
 @font-face {
@@ -73,7 +76,7 @@ nav a {
     align-items: center;
     width: auto;
     height: 80vh;
-    background: linear-gradient(to right, #ff66b2, #a64dff, #66b3ff); /* Degradê rosa, roxo e azul */
+    background: var(--background-degrade1); /* Degradê rosa, roxo e azul */
 /*     background: url('../assets/images/hero.jpg') no-repeat center center/cover;*/    color: #620f72;
     text-align: center;
     padding: 5rem 0;
@@ -90,13 +93,14 @@ nav a {
     margin-bottom: 2rem;
 }
 
-.hero__cta {
+.button__agendar {
     background-color: var(--primary-color);
     color: var(--background-color2);
     padding: 0.75rem 1.5rem;
     font-size: 1.25rem;
     text-decoration: none;
     border-radius: 5px;
+    border-style: none;
 }
 
 .hero__cta:hover {
@@ -104,15 +108,15 @@ nav a {
 }
 
 /* Seções Gerais */
-.section__title {
+ .section__title {
     margin-bottom: 1.5rem;
     text-align: center;
 }
-
+/*
 .section__description {
     text-align: center;
     margin-bottom: 3rem;
-}
+} */
 
 /* Sobre Nós */
 .sobre-nos {
@@ -124,7 +128,7 @@ nav a {
 
 /* Conheça Nossos Colaboradores */
 .colaboradores{
-    padding: 3rem, 0;
+    padding: 3rem 0;
 }
 .colaboradores__list {
     display: flex;
@@ -140,6 +144,7 @@ nav a {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
+    font-size: 1rem;
 }
 
 .card-body {
@@ -152,13 +157,22 @@ nav a {
 }
 
 
-
 /* Localização */
 .localizacao {
     padding: 3rem 0;
-    background-color: #f4f4f4;
+    background: var(--background-degrade2);
     display: flex;
     justify-content: center;
+}
+
+.container_localizacao{
+    display: flex;
+    flex-direction: column;
+}
+
+.localizacao p {
+    font-size: 1rem;
+    padding: 20px;
 }
 
 .section__localizacao {
@@ -166,15 +180,55 @@ nav a {
 }
 
 /* Preço */
+
 .container_preco {
     width: 70%;
+    padding: 3rem 0;
+    color: var(--text-color) !important;
 }
-
+.preco-card{
+    margin: 1rem 0;
+}
+.container_preco .text-center{
+    border-color: var(--primary-color);
+}
+.container_preco .card-header{
+    font-size: 1.5rem;
+    color: var(--text-color) !important;
+    background: var(--background-degrade2) !important;
+    border-color: var(--primary-color);
+}
+.container_preco .card-footer{
+    font-size: 1.5rem;
+    color: var(--text-color) !important;
+    background: var(--background-degrade2) !important;
+    border-color: var(--primary-color);
+}
+.container_preco p{
+    font-size: 1.25rem;
+}
 .preco {
     display: flex;
     justify-content: center;
-
 }
+
+/* Vertente */
+.vertente{
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    background: var(--background-degrade2);
+}
+.container_vertente{
+    width: 70%;
+}
+.container_vertente p {
+    font-size: 1rem;
+}
+.container_vertente .card-body{
+    color: var(--text-color);
+}
+
 
 /* Agende uma Aula */
 .agendar {
@@ -215,9 +269,37 @@ nav a {
     background-color: #218838;
 }
 
+.agendar .container{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.social-card{
+    text-align: center;
+    padding: 3rem 0;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.social-icons img{
+    display: flex;
+    flex-direction: row;
+    width: 35px;
+    cursor: pointer;
+    padding: 0 0.2rem;
+}
+.social-icons {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+}
+
 /* Footer */
 .footer {
-    background-color: #333;
+    background-color: var(--primary-color);
     color: #fff;
     text-align: center;
     padding: 1rem 0;
