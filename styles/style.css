@@ -54,6 +54,7 @@ h2 {
 }
 nav{
     /* background-color: var(--background-color1); */
+    font-size: 1rem !important;
     position: absolute !important; /* Faz a navbar ficar fixa na tela */
     top: 0; /* Posiciona a navbar no topo */
     left: 0; /* Alinha a navbar à esquerda */
@@ -122,6 +123,9 @@ nav a {
 }
 
 /* Conheça Nossos Colaboradores */
+.colaboradores{
+    padding: 3rem, 0;
+}
 .colaboradores__list {
     display: flex;
     flex-wrap: wrap;
