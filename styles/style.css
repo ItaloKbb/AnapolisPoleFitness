@@ -1,9 +1,25 @@
 :root {
   --primary-color: #8d168d;
+  --primary-color-hover: #6d0c6d;
   --secondary-color: #5d2a97;
-  --text-color: #1d0233;
-  --background-color1: #ffe0ff;
-  --background-color1: #e1d6fc;
+  --text-color: #300652;
+  --background-color1: #faebfa;
+  --background-color2: #e1d6fc;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(../assets/fonts/Poppins-Bold.ttf) format('truetype');
+    src: url(../assets/fonts/Poppins-ExtraBold.ttf) format('truetype');
+    src: url(../assets/fonts/Poppins-ExtraBoldItalic.ttf) format('truetype');
+    src: url(../assets/fonts/Poppins-Italic.ttf) format('truetype');
+    src: url(../assets/fonts/Poppins-Light.ttf) format('truetype');
+    src: url(../assets/fonts/Poppins-Medium.ttf) format('truetype');
+    src: url(../assets/fonts/Poppins-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'Sevillana';
+    src: url(../assets/fonts/Sevillana-Regular.ttf) format('truetype');
 }
 
 * {
@@ -13,9 +29,15 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Poppins', sans-serif !important;
+    font-size: 2rem !important;
     color: var(--text-color);
+}
+
+h2 {
+    font-family: 'Sevillana', sans-serif !important;
+    font-size: 3rem !important;
+    color: var(--text-color) !important;
 }
 
 /* Container padrão para centralizar conteúdo */
@@ -26,18 +48,35 @@ body {
 }
 
 /* Navbar */
-.navbar-container {
+.navbar-div {
     display: flex;
     justify-content: center;
 }
+nav{
+    /* background-color: var(--background-color1); */
+    position: absolute !important; /* Faz a navbar ficar fixa na tela */
+    top: 0; /* Posiciona a navbar no topo */
+    left: 0; /* Alinha a navbar à esquerda */
+    width: 100%; /* Largura total da tela */
+    z-index: 1000; /* Garante que a navbar fique sobre outros elementos */
+    background-color: rgba(0, 0, 0, 0); /* Cor de fundo com opacidade, ajuste conforme necessário */
+}
 
+nav a {
+    color: var(--text-color) !important;
+}
 
 /* Hero Section */
 .hero {
-    background: url('../images/hero-bg.jpg') no-repeat center center/cover;
-    color: #620f72;
+    display: flex;
+    align-items: center;
+    width: auto;
+    height: 80vh;
+    background: linear-gradient(to right, #ff66b2, #a64dff, #66b3ff); /* Degradê rosa, roxo e azul */
+/*     background: url('../assets/images/hero.jpg') no-repeat center center/cover;*/    color: #620f72;
     text-align: center;
     padding: 5rem 0;
+    padding-top: 70px; /* Ajuste o padding para corresponder à altura da navbar */
 }
 
 .hero__title {
@@ -51,8 +90,8 @@ body {
 }
 
 .hero__cta {
-    background-color: #007bff;
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--background-color2);
     padding: 0.75rem 1.5rem;
     font-size: 1.25rem;
     text-decoration: none;
@@ -60,51 +99,56 @@ body {
 }
 
 .hero__cta:hover {
-    background-color: #0056b3;
+    background-color: var(--primary-color-hover);
 }
 
 /* Seções Gerais */
 .section__title {
-    font-size: 2rem;
     margin-bottom: 1.5rem;
     text-align: center;
-    color: #333;
 }
 
 .section__description {
-    font-size: 1.125rem;
     text-align: center;
     margin-bottom: 3rem;
-    color: #666;
 }
 
 /* Sobre Nós */
 .sobre-nos {
+    font-size: 1rem;
     padding: 3rem 0;
-    background-color: #f4f4f4;
+    height: auto;
+    background-color: var(--background-color1);
 }
 
 /* Conheça Nossos Colaboradores */
-.colaboradores {
-    padding: 3rem 0;
-}
-
 .colaboradores__list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
 }
 
-.colaboradores__item{
+.colaboradores__item {
+    flex: 1 1 calc(50% - 20px); /* Cada card ocupa 50% da largura com margem */
+    max-width: 18rem;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
 
-/* .colaboradores__item:nth-child(5) {
-    grid-column: span 2; 
-} */
+.card-body {
+    text-align: center;
+}
+
+.colaboradores__list img {
+    width: 100%;
+    height: auto;
+}
+
+
+
 /* Localização */
 .localizacao {
     padding: 3rem 0;
