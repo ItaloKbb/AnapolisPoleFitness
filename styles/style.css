@@ -180,36 +180,45 @@ nav a {
 }
 
 /* Preço */
-
-.container_preco {
-    width: 70%;
-    padding: 3rem 0;
-    color: var(--text-color) !important;
-}
-.preco-card{
-    margin: 1rem 0;
-}
-.container_preco .text-center{
-    border-color: var(--primary-color);
-}
-.container_preco .card-header{
-    font-size: 1.5rem;
-    color: var(--text-color) !important;
-    background: var(--background-degrade2) !important;
-    border-color: var(--primary-color);
-}
-.container_preco .card-footer{
-    font-size: 1.5rem;
-    color: var(--text-color) !important;
-    background: var(--background-degrade2) !important;
-    border-color: var(--primary-color);
-}
-.container_preco p{
-    font-size: 1.25rem;
-}
 .preco {
     display: flex;
     justify-content: center;
+}
+
+.container_preco {
+    width: 50%;
+    padding: 3rem 0;
+    color: var(--text-color) !important;
+}
+
+.preco-card{
+    margin: 1rem 0;
+}
+
+.container_preco .text-center{
+    border-color: var(--primary-color);
+}
+
+.container_preco .card-header{
+    font-size: 1.25rem;
+    color: var(--text-color) !important;
+    background: var(--background-degrade2) !important;
+    border-color: var(--primary-color);
+}
+
+.container_preco .card-footer{
+    font-size: 1.25rem;
+    color: var(--text-color) !important;
+    background: var(--background-degrade2) !important;
+    border-color: var(--primary-color);
+}
+
+.container_preco p{
+    font-size: 1rem;
+}
+
+.container_preco .button__agendar{
+    font-size: 1rem;
 }
 
 /* Vertente */
