@@ -1,61 +1,68 @@
 :root {
-  --primary-color: #5d2a97;
-  --primary-color-hover: #6d0c6d;
-  --secondary-color: #8d168d;
-  --text-color: #300652;
-  --background-color1: #faebfa;
-  --background-color2: #ecf5fa;
-  --background-degrade1: linear-gradient(to left, #ff66b2, #a64dff, #66b3ff);
-  --background-degrade2: linear-gradient(to right, #faebfa, #cbbcf0, #a8c5e2);
+    --primary-color: #5d2a97;
+    --primary-color-hover: #6d0c6d;
+    --secondary-color: #8d168d;
+    --text-color: #300652;
+    --background-color1: #faebfa;
+    --background-color2: #ecf5fa;
+    --background-degrade1: linear-gradient(to left, #ff66b2, #a64dff, #66b3ff);
+    --background-degrade2: linear-gradient(to right, #faebfa, #cbbcf0, #a8c5e2);
 
 }
 
 @font-face {
     font-family: 'Poppins';
     src: url('../assets/fonts/Poppins-Regular.ttf') format('truetype');
-    font-weight: 400; /* Normal */
+    font-weight: 400;
+    /* Normal */
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Poppins';
     src: url('../assets/fonts/Poppins-Bold.ttf') format('truetype');
-    font-weight: 700; /* Bold */
+    font-weight: 700;
+    /* Bold */
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Poppins';
     src: url('../assets/fonts/Poppins-ExtraBold.ttf') format('truetype');
-    font-weight: 800; /* Extra Bold */
+    font-weight: 800;
+    /* Extra Bold */
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Poppins';
     src: url('../assets/fonts/Poppins-ExtraBoldItalic.ttf') format('truetype');
-    font-weight: 800; /* Extra Bold Italic */
+    font-weight: 800;
+    /* Extra Bold Italic */
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Poppins';
     src: url('../assets/fonts/Poppins-Italic.ttf') format('truetype');
-    font-weight: 400; /* Regular Italic */
+    font-weight: 400;
+    /* Regular Italic */
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Poppins';
     src: url('../assets/fonts/Poppins-Light.ttf') format('truetype');
-    font-weight: 300; /* Light */
+    font-weight: 300;
+    /* Light */
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Poppins';
     src: url('../assets/fonts/Poppins-Medium.ttf') format('truetype');
-    font-weight: 500; /* Medium */
+    font-weight: 500;
+    /* Medium */
     font-style: normal;
 }
 
@@ -95,19 +102,27 @@ h2 {
     display: flex;
     justify-content: center;
 }
-nav{
+
+nav {
     /* background-color: var(--background-color1); */
     font-size: 1rem !important;
-    position: absolute !important; /* Faz a navbar ficar fixa na tela */
-    top: 0; /* Posiciona a navbar no topo */
-    left: 0; /* Alinha a navbar à esquerda */
-    width: 100%; /* Largura total da tela */
-    z-index: 1000; /* Garante que a navbar fique sobre outros elementos */
-    background-color: rgba(0, 0, 0, 0); /* Cor de fundo com opacidade, ajuste conforme necessário */
+    position: absolute !important;
+    /* Faz a navbar ficar fixa na tela */
+    top: 0;
+    /* Posiciona a navbar no topo */
+    left: 0;
+    /* Alinha a navbar à esquerda */
+    width: 100%;
+    /* Largura total da tela */
+    z-index: 1000;
+    /* Garante que a navbar fique sobre outros elementos */
+    background-color: rgba(0, 0, 0, 0);
+    /* Cor de fundo com opacidade, ajuste conforme necessário */
 }
 
 nav a {
-    color: var(--text-color) !important;
+    /* color: var(--text-color) !important; */
+    color: white !important;
 }
 
 /* Hero Section */
@@ -116,23 +131,25 @@ nav a {
     align-items: center;
     width: auto;
     height: 90vh;
-    background: var(--background-degrade1); /* Degradê rosa, roxo e azul */
-/*     background: url('../assets/images/hero.jpg') no-repeat center center/cover;*/    color: #620f72;
-    text-align: center;
+    /*background: var(--background-degrade1);*/
+    background: url('../assets/images/GettyImages-1229275252.png') no-repeat center center/cover;
     padding: 5rem 1rem;
-    padding-top: 70px; /* Ajuste o padding para corresponder à altura da navbar */
+    padding-top: 70px;
+    /* Ajuste o padding para corresponder à altura da navbar */
 }
 
 .hero__title {
     font-size: 3rem;
     margin-bottom: 1rem;
+    color: white !important;
 }
 
-.hero__logo{
+.hero__logo {
     width: 200px;
 }
 
 .hero__subtitle {
+    color: white !important;
     font-size: 1.5rem;
     margin-bottom: 2rem;
 }
@@ -152,11 +169,12 @@ nav a {
 }
 
 /* Seções Gerais */
- .section__title {
+.section__title {
     margin-bottom: 1.5rem;
     text-align: center;
     color: var(--text-color);
 }
+
 /*
 .section__description {
     text-align: center;
@@ -171,23 +189,30 @@ nav a {
     background-color: var(--background-color1);
     text-align: justify;
 }
-.section-sobre__body{
+
+.section-sobre__body {
     display: flex;
 }
-.section-sobre__body img{
+
+.section-sobre__body img {
     border-radius: 8px;
     border-style: solid;
     padding-right: 2rem;
-    width: 100%;          /* A imagem vai ocupar 100% da largura do container */
-    height: auto;         /* A altura será ajustada automaticamente mantendo a proporção */
-    object-fit: cover;    /* Garante que a imagem seja coberta completamente sem distorção */
-    border-radius: 8px;   /* Opcional: para dar bordas arredondadas à imagem */
+    width: 100%;
+    /* A imagem vai ocupar 100% da largura do container */
+    height: auto;
+    /* A altura será ajustada automaticamente mantendo a proporção */
+    object-fit: cover;
+    /* Garante que a imagem seja coberta completamente sem distorção */
+    border-radius: 8px;
+    /* Opcional: para dar bordas arredondadas à imagem */
 }
 
 /* Conheça Nossos Colaboradores */
-.colaboradores{
+.colaboradores {
     padding: 3rem 0;
 }
+
 .colaboradores__list {
     display: flex;
     flex-wrap: wrap;
@@ -196,7 +221,8 @@ nav a {
 }
 
 .colaboradores__item {
-    flex: 1 1 calc(50% - 20px); /* Cada card ocupa 50% da largura com margem */
+    flex: 1 1 calc(50% - 20px);
+    /* Cada card ocupa 50% da largura com margem */
     max-width: 18rem;
     background-color: #fff;
     border-radius: 8px;
@@ -217,40 +243,67 @@ nav a {
 /* Conheça Nosso Espaço */
 
 .espaco {
-    background-color: var(--background-color2);
+    /*     background-color: var(--background-color2); */
+    position: relative;
+    z-index: 1;
+    background: url('../assets/images/padrao.jpg') no-repeat center center/cover;
     padding: 3rem 0;
-    height: 80vh;
+    height: 75vh;
 }
 
-.espaco .container{
+.secao-com-fundo {
+    position: relative;
+    z-index: 1;
+    background: url('../assets/images/padrao.jpg') no-repeat center center/cover;
+}
+
+.espaco::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(239, 229, 255, 0.8);
+    /* Ajuste a cor e opacidade aqui */
+    z-index: -1;
+}
+
+
+.espaco .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    
+
 }
 
 .carousel-container {
     width: 100%;
-    max-width: 40%; /* Limita a largura máxima do carrossel */
+    max-width: 40%;
+    /* Limita a largura máxima do carrossel */
 }
 
 .carousel-inner img {
     border-radius: 8px;
-    margin: 0 auto; /* Centraliza a imagem dentro do carrossel */
+    margin: 0 auto;
+    /* Centraliza a imagem dentro do carrossel */
     max-width: 100%;
-    height: auto; /* Mantém a proporção da imagem */
+    height: auto;
+    /* Mantém a proporção da imagem */
 }
 
 .carousel-caption {
-    text-align: center; /* Centraliza o texto das legendas */
+    text-align: center;
+    /* Centraliza o texto das legendas */
 }
 
 .carousel-indicators {
     justify-content: center;
 }
-.carousel-item-p{
+
+.carousel-item-p {
     font-size: 1rem;
     font-weight: 200;
 }
@@ -263,7 +316,7 @@ nav a {
     justify-content: center;
 }
 
-.container_localizacao{
+.container_localizacao {
     display: flex;
     flex-direction: column;
 }
@@ -289,72 +342,79 @@ nav a {
     color: var(--text-color) !important;
 }
 
-.preco-card{
+.preco-card {
     margin: 1rem 0;
 }
 
-.container_preco .text-center{
+.container_preco .text-center {
     border-color: var(--primary-color);
 }
 
-.container_preco .card-header{
+.container_preco .card-header {
     font-size: 1.25rem;
     color: var(--text-color) !important;
     background: var(--background-degrade2) !important;
     border-color: var(--primary-color);
 }
 
-.container_preco .card-footer{
+.container_preco .card-footer {
     font-size: 1.25rem;
     color: var(--text-color) !important;
     background: var(--background-degrade2) !important;
     border-color: var(--primary-color);
 }
 
-.container_preco p{
+.container_preco p {
     font-size: 1rem;
 }
 
-.container_preco .button__agendar{
+.container_preco .button__agendar {
     font-size: 0.9rem;
     padding: 0.6rem;
 }
 
 /* Vertente */
-.vertente{
+.vertente {
     padding: 2rem 0;
     display: flex;
     justify-content: center;
     background: var(--background-degrade2);
 }
-.container_vertente .button__agendar{
+
+.container_vertente .button__agendar {
     padding: 0.5rem;
     font-size: 1rem;
 }
-.container_vertente{
+
+.container_vertente {
     width: 70%;
 }
+
 .container_vertente p {
     font-size: 1rem;
 }
-.container_vertente .card-body{
+
+.container_vertente .card-body {
     color: var(--text-color);
 }
 
 /* Horários */
-.horarios{
+.horarios {
     padding: 2rem 0;
     display: flex;
     justify-content: center;
     background-color: var(--background-color2);
 }
-.container_vertente{
+
+.container_vertente {
     width: 70%;
 }
+
 .container_vertente p {
     font-size: 1rem;
 }
-.container_vertente .card-body{
+
+.container_vertente .card-body {
     color: var(--text-color);
 }
 
@@ -363,14 +423,16 @@ nav a {
 .agendar {
     padding: 3rem 0;
 }
-.agendar .section__title{
+
+.agendar .section__title {
     font-size: 2rem !important;
 }
-.agendar .button__agendar{
+
+.agendar .button__agendar {
     width: 40%;
 }
 
-.agendar .container{
+.agendar .container {
     width: 70%;
     display: flex;
     justify-content: center;
@@ -378,7 +440,7 @@ nav a {
     align-items: center;
 }
 
-.social-card{
+.social-card {
     text-align: center;
     padding: 3rem 0;
     font-size: 1.5rem;
@@ -386,13 +448,15 @@ nav a {
     align-items: center;
     flex-direction: column;
 }
-.social-icons img{
+
+.social-icons img {
     display: flex;
     flex-direction: row;
     width: 35px;
     cursor: pointer;
     padding: 0 0.2rem;
 }
+
 .social-icons {
     width: auto;
     display: flex;
