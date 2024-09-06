@@ -12,14 +12,53 @@
 
 @font-face {
     font-family: 'Poppins';
-    src: url(../assets/fonts/Poppins-Bold.ttf) format('truetype');
-    src: url(../assets/fonts/Poppins-ExtraBold.ttf) format('truetype');
-    src: url(../assets/fonts/Poppins-ExtraBoldItalic.ttf) format('truetype');
-    src: url(../assets/fonts/Poppins-Italic.ttf) format('truetype');
-    src: url(../assets/fonts/Poppins-Light.ttf) format('truetype');
-    src: url(../assets/fonts/Poppins-Medium.ttf) format('truetype');
-    src: url(../assets/fonts/Poppins-Regular.ttf) format('truetype');
+    src: url('../assets/fonts/Poppins-Regular.ttf') format('truetype');
+    font-weight: 400; /* Normal */
+    font-style: normal;
 }
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../assets/fonts/Poppins-Bold.ttf') format('truetype');
+    font-weight: 700; /* Bold */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../assets/fonts/Poppins-ExtraBold.ttf') format('truetype');
+    font-weight: 800; /* Extra Bold */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../assets/fonts/Poppins-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800; /* Extra Bold Italic */
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../assets/fonts/Poppins-Italic.ttf') format('truetype');
+    font-weight: 400; /* Regular Italic */
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../assets/fonts/Poppins-Light.ttf') format('truetype');
+    font-weight: 300; /* Light */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../assets/fonts/Poppins-Medium.ttf') format('truetype');
+    font-weight: 500; /* Medium */
+    font-style: normal;
+}
+
 @font-face {
     font-family: 'Sevillana';
     src: url(../assets/fonts/Sevillana-Regular.ttf) format('truetype');
@@ -38,8 +77,9 @@ body {
 }
 
 h2 {
-    font-family: 'Sevillana', sans-serif !important;
-    font-size: 3rem !important;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 800;
+    font-size: 2.3rem !important;
     color: var(--text-color) !important;
 }
 
@@ -129,6 +169,18 @@ nav a {
     height: auto;
     background-color: var(--background-color1);
     text-align: justify;
+}
+.section-sobre__body{
+    display: flex;
+}
+.section-sobre__body img{
+    border-radius: 8px;
+    border-style: solid;
+    padding-right: 2rem;
+    width: 100%;          /* A imagem vai ocupar 100% da largura do container */
+    height: auto;         /* A altura será ajustada automaticamente mantendo a proporção */
+    object-fit: cover;    /* Garante que a imagem seja coberta completamente sem distorção */
+    border-radius: 8px;   /* Opcional: para dar bordas arredondadas à imagem */
 }
 
 /* Conheça Nossos Colaboradores */
