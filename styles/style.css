@@ -425,19 +425,26 @@ blockquote {
 
 /* Agende uma Aula */
 .agendar {
-    padding: 3rem 0;
+    padding: 2rem 0;
 }
 
 .agendar .section__title {
-    font-size: 2rem !important;
+    font-size: 1.5rem !important;
+}
+
+.agendar .card-header{
+    background: var(--background-degrade2);
+    text-align: center;
+    font-size: 1.5rem;
 }
 
 .agendar .button__agendar {
     width: 40%;
+    min-width: 200px;
 }
 
 .agendar .container {
-    width: 70%;
+    width: 90%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -446,7 +453,7 @@ blockquote {
 
 .social-card {
     text-align: center;
-    padding: 3rem 0;
+    padding: 1rem 0;
     font-size: 1.5rem;
     display: flex;
     align-items: center;
@@ -456,9 +463,9 @@ blockquote {
 .social-icons img {
     display: flex;
     flex-direction: row;
-    width: 35px;
     cursor: pointer;
     padding: 0 0.2rem;
+    width: 50px;
 }
 
 .social-icons {
