@@ -398,6 +398,11 @@ nav a {
     color: var(--text-color);
 }
 
+blockquote {
+    width: 50%;
+    height: 100px;
+}
+
 /* Horários */
 .horarios {
     padding: 2rem 0;
