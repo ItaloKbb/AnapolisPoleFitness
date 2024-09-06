@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anápolis Pole Fitness</title>
+    <link rel="icon" href="assets/images/icons/dance.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Fo3rlrZj/k7ujTnH/4+2Xx+6GBc5jl+tB5t1VzcfM9GUMS2uowcltssQc1K42zsc3p0O9M+ujwD1GbcjLgLZ2g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -34,7 +35,13 @@
                         <a class="nav-link" href="#colaboradores">Colaboradores</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#espaco">Espaço</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#vertentes">Vertentes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#horarios">Horários</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#planos">Planos</a>
@@ -73,17 +80,24 @@
                     <!-- <img src="assets/images/sobre.jpg" class="card-img-top" alt="..."> -->
                     <div>
                         <p class="section__description">
-                            Pioneira na cidade, o Anápolis Pole Fitness, desde 2016, transforma a vida de mulheres através
-                            de uma metodologia própria, planejada especialmente para você, mulher, que já pratica esportes
-                            ou que deseja sair do sedentarismo com uma atividade física diferente e divertida! Nossa missão
-                            é proporcionar uma jornada de transformação, focada na saúde, autoestima, condicionamento físico
+                            Pioneira na cidade, o Anápolis Pole Fitness, desde 2016, transforma a vida de mulheres
+                            através
+                            de uma metodologia própria, planejada especialmente para você, mulher, que já pratica
+                            esportes
+                            ou que deseja sair do sedentarismo com uma atividade física diferente e divertida! Nossa
+                            missão
+                            é proporcionar uma jornada de transformação, focada na saúde, autoestima, condicionamento
+                            físico
                             e na dança.
                         </p>
                         <p class="section__description">
-                            Aqui, acreditamos que o exercício físico vai além de uma simples rotina. Nossas aulas de pole
+                            Aqui, acreditamos que o exercício físico vai além de uma simples rotina. Nossas aulas de
+                            pole
                             dance são projetadas para desafiar seu corpo, fortalecer seus músculos e, ao mesmo tempo,
-                            promover o autoconhecimento e o cuidado consigo mesma. Cada movimento no pole não é apenas uma
-                            forma de ganhar força e resistência, mas também uma celebração da sua individualidade e do seu
+                            promover o autoconhecimento e o cuidado consigo mesma. Cada movimento no pole não é apenas
+                            uma
+                            forma de ganhar força e resistência, mas também uma celebração da sua individualidade e do
+                            seu
                             poder pessoal.
                         </p>
                         <p class="section__description">
@@ -138,6 +152,14 @@
         </div>
     </section>
 
+    <!-- Conheça Nosso Espaço Section -->
+    <section id="espaco" class="espaco">
+        <div class="container">
+            <h2 class="section__title">Conheça Nosso Espaço Físico</h2>
+            
+        </div>
+    </section>
+
     <!-- Vertente Section -->
     <section id="vertentes" class="vertente">
         <div class="container_vertente">
@@ -150,6 +172,29 @@
                         Nossa metodologia vai do básico 1 ao avançado e você pode escolher em ter horário fixo ou
                         flexível.
                     </p>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="button__agendar" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Conheça mais
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">O que é Pole Dance Fitness?</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item" src="https://www.instagram.com/reel/C6EcELlLD5f/?igsh=MWN2bDFiNTJ1YXEwZg==" allowfullscreen></iframe>
+                                      </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="card text-center mb-3">
@@ -175,6 +220,14 @@
                     </p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Horarios Section -->
+    <section id="horarios" class="horarios">
+        <div class="container_horarios">
+            <h2 class="section__title">Horários de aula</h2>
+
         </div>
     </section>
 
@@ -247,9 +300,9 @@
     <section id="agendar" class="agendar">
         <div class="container">
             <h2 class="section__title">Agende sua aula e venha se <br> divertir com a gente!</h2>
-            <form action="#" method="post" class="agendar__form">
-                <button type="submit" class="button__agendar">Agendar</button>
-            </form>
+            <button type="submit" class="button__agendar">Agendar</button>
+            <!--  <form action="#" method="post" class="agendar__form">
+            </form> -->
             <div class="social-card">
                 <p>Siga-nos nas redes sociais</h3>
                 <div class="social-icons">

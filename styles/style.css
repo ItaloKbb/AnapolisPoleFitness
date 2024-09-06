@@ -4,7 +4,7 @@
   --secondary-color: #8d168d;
   --text-color: #300652;
   --background-color1: #faebfa;
-  --background-color2: #e1d6fc;
+  --background-color2: #ecf5fa;
   --background-degrade1: linear-gradient(to left, #ff66b2, #a64dff, #66b3ff);
   --background-degrade2: linear-gradient(to right, #faebfa, #cbbcf0, #a8c5e2);
 
@@ -129,7 +129,7 @@ nav a {
 }
 
 .hero__logo{
-    width: 300px;
+    width: 200px;
 }
 
 .hero__subtitle {
@@ -213,6 +213,11 @@ nav a {
     height: auto;
 }
 
+/* Conheça Nosso Espaço */
+.espaco{
+    padding: 3rem 0;
+    background-color: var(--background-color2);
+}
 
 /* Localização */
 .localizacao {
@@ -286,6 +291,27 @@ nav a {
     justify-content: center;
     background: var(--background-degrade2);
 }
+.container_vertente .button__agendar{
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+.container_vertente{
+    width: 70%;
+}
+.container_vertente p {
+    font-size: 1rem;
+}
+.container_vertente .card-body{
+    color: var(--text-color);
+}
+
+/* Horários */
+.horarios{
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    background-color: var(--background-color2);
+}
 .container_vertente{
     width: 70%;
 }
@@ -301,39 +327,11 @@ nav a {
 .agendar {
     padding: 3rem 0;
 }
-
-.agendar__form {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    max-width: 500px;
-    margin: 0 auto;
+.agendar .section__title{
+    font-size: 2rem !important;
 }
-
-.agendar__label {
-    font-size: 1rem;
-    color: #333;
-}
-
-.agendar__input {
-    padding: 0.75rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-.agendar__button {
-    background-color: #28a745;
-    color: #fff;
-    padding: 0.75rem;
-    font-size: 1.25rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.agendar__button:hover {
-    background-color: #218838;
+.agendar .button__agendar{
+    width: 40%;
 }
 
 .agendar .container{
@@ -341,6 +339,7 @@ nav a {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
 }
 
 .social-card{
