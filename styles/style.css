@@ -155,6 +155,7 @@ nav a {
  .section__title {
     margin-bottom: 1.5rem;
     text-align: center;
+    color: var(--text-color);
 }
 /*
 .section__description {
@@ -214,9 +215,44 @@ nav a {
 }
 
 /* Conheça Nosso Espaço */
-.espaco{
-    padding: 3rem 0;
+
+.espaco {
     background-color: var(--background-color2);
+    padding: 3rem 0;
+    height: 80vh;
+}
+
+.espaco .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.carousel-container {
+    width: 100%;
+    max-width: 40%; /* Limita a largura máxima do carrossel */
+}
+
+.carousel-inner img {
+    border-radius: 8px;
+    margin: 0 auto; /* Centraliza a imagem dentro do carrossel */
+    max-width: 100%;
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.carousel-caption {
+    text-align: center; /* Centraliza o texto das legendas */
+}
+
+.carousel-indicators {
+    justify-content: center;
+}
+.carousel-item-p{
+    font-size: 1rem;
+    font-weight: 200;
 }
 
 /* Localização */
