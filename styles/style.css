@@ -248,7 +248,6 @@ nav a {
     z-index: 1;
     background: url('../assets/images/padrao.jpg') no-repeat center center/cover;
     padding: 3rem 0;
-    height: 75vh;
 }
 
 .secao-com-fundo {
@@ -280,9 +279,9 @@ nav a {
 }
 
 .carousel-container {
-    width: 100%;
-    max-width: 40%;
-    /* Limita a largura máxima do carrossel */
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
 }
 
 .carousel-inner img {
