@@ -5,7 +5,7 @@
   --text-color: #300652;
   --background-color1: #faebfa;
   --background-color2: #e1d6fc;
-  --background-degrade1: linear-gradient(to right, #ff66b2, #a64dff, #66b3ff);
+  --background-degrade1: linear-gradient(to left, #ff66b2, #a64dff, #66b3ff);
   --background-degrade2: linear-gradient(to right, #faebfa, #cbbcf0, #a8c5e2);
 
 }
@@ -75,17 +75,21 @@ nav a {
     display: flex;
     align-items: center;
     width: auto;
-    height: 80vh;
+    height: 90vh;
     background: var(--background-degrade1); /* Degradê rosa, roxo e azul */
 /*     background: url('../assets/images/hero.jpg') no-repeat center center/cover;*/    color: #620f72;
     text-align: center;
-    padding: 5rem 0;
+    padding: 5rem 1rem;
     padding-top: 70px; /* Ajuste o padding para corresponder à altura da navbar */
 }
 
 .hero__title {
     font-size: 3rem;
     margin-bottom: 1rem;
+}
+
+.hero__logo{
+    width: 300px;
 }
 
 .hero__subtitle {
@@ -121,9 +125,10 @@ nav a {
 /* Sobre Nós */
 .sobre-nos {
     font-size: 1rem;
-    padding: 3rem 0;
+    padding: 3rem 1rem;
     height: auto;
     background-color: var(--background-color1);
+    text-align: justify;
 }
 
 /* Conheça Nossos Colaboradores */
@@ -159,7 +164,7 @@ nav a {
 
 /* Localização */
 .localizacao {
-    padding: 3rem 0;
+    padding: 3rem 2rem;
     background: var(--background-degrade2);
     display: flex;
     justify-content: center;
@@ -186,7 +191,7 @@ nav a {
 }
 
 .container_preco {
-    width: 50%;
+    width: 70%;
     padding: 3rem 0;
     color: var(--text-color) !important;
 }
@@ -218,7 +223,8 @@ nav a {
 }
 
 .container_preco .button__agendar{
-    font-size: 1rem;
+    font-size: 0.9rem;
+    padding: 0.6rem;
 }
 
 /* Vertente */
