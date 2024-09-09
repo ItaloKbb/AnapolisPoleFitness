@@ -1,12 +1,12 @@
 :root {
-    --primary-color: #5d2a97;
-    --primary-color-hover: #6d0c6d;
-    --secondary-color: #8d168d;
-    --text-color: #300652;
-    --background-color1: #faebfa;
-    --background-color2: #ecf5fa;
-    --background-degrade1: linear-gradient(to left, #ff66b2, #a64dff, #66b3ff);
-    --background-degrade2: linear-gradient(to right, #faebfa, #cbbcf0, #a8c5e2);
+    --primary-color: #000000;
+    --primary-color-hover: #094b49;
+    --secondary-color: #62726e;
+    --text-color: #02191b;
+    --background-color1: #b8b8b8;
+    --background-color2: #b3b8b7;
+    --background-degrade1: linear-gradient(to left, #424242, #4a4b4b, #171717);
+    --background-degrade2: linear-gradient(to right, #cdd3d3, #a2b4b4, #5d7471);
 
 }
 
@@ -64,11 +64,6 @@
     font-weight: 500;
     /* Medium */
     font-style: normal;
-}
-
-@font-face {
-    font-family: 'Sevillana';
-    src: url(../assets/fonts/Sevillana-Regular.ttf) format('truetype');
 }
 
 * {
@@ -131,8 +126,8 @@ nav a {
     align-items: center;
     width: auto;
     height: 90vh;
-    /*background: var(--background-degrade1);*/
-    background: url('../assets/images/GettyImages-1229275252.png') no-repeat center center/cover;
+  background: var(--background-degrade1);
+     /* background: url('../assets/images/GettyImages-1229275252.png') no-repeat center center/cover;*/
     padding: 5rem 1rem;
     padding-top: 70px;
     /* Ajuste o padding para corresponder à altura da navbar */
@@ -186,7 +181,7 @@ nav a {
     font-size: 1rem;
     padding: 3rem 1rem;
     height: auto;
-    background-color: var(--background-color1);
+    /* background-color: var(--background-color1); */
     text-align: justify;
 }
 
@@ -339,6 +334,7 @@ nav a {
     width: 70%;
     padding: 3rem 0;
     color: var(--text-color) !important;
+    font-size: 1rem;
 }
 
 .preco-card {
@@ -408,6 +404,7 @@ blockquote {
     display: flex;
     justify-content: center;
     background-color: var(--background-color2);
+    font-size: 1rem;
 }
 
 .container_vertente {
