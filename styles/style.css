@@ -107,7 +107,6 @@ nav {
     /* background-color: var(--background-color1); */
     font-size: 1rem !important;
     position: absolute !important;
-    /* Faz a navbar ficar fixa na tela */
     top: 0;
     /* Posiciona a navbar no topo */
     left: 0;
@@ -246,15 +245,10 @@ nav a {
     /*     background-color: var(--background-color2); */
     position: relative;
     z-index: 1;
-    background: url('../assets/images/padrao.jpg') no-repeat center center/cover;
+  /*   background: url('../assets/images/padrao.jpg') no-repeat center center/cover; */
     padding: 3rem 0;
 }
 
-.secao-com-fundo {
-    position: relative;
-    z-index: 1;
-    background: url('../assets/images/padrao.jpg') no-repeat center center/cover;
-}
 
 .espaco::before {
     content: '';
@@ -263,7 +257,7 @@ nav a {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(239, 229, 255, 0.8);
+    background-color: var(--background-color1);
     /* Ajuste a cor e opacidade aqui */
     z-index: -1;
 }
