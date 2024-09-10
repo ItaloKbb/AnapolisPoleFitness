@@ -402,26 +402,6 @@ blockquote {
     height: 100px;
 }
 
-/* Horários */
-.horarios {
-    padding: 2rem 0;
-    display: flex;
-    justify-content: center;
-    background-color: var(--background-color2);
-}
-
-.container_vertente {
-    width: 70%;
-}
-
-.container_vertente p {
-    font-size: 1rem;
-}
-
-.container_vertente .card-body {
-    color: var(--text-color);
-}
-
 
 /* Agende uma Aula */
 .agendar {
