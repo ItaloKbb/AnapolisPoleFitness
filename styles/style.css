@@ -346,6 +346,22 @@ nav a {
     margin: 1rem 0;
 }
 
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-body p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.card-text {
+    list-style-type: disc; /* Padrão: bolinhas */
+    padding-left: 20px; /* Ajusta o espaçamento à esquerda */
+    text-align: left;
+}
+
 .container_preco .text-center {
     border-color: var(--primary-color);
 }
@@ -364,8 +380,8 @@ nav a {
     border-color: var(--primary-color);
 }
 
-.container_preco p {
-    font-size: 1rem;
+.container_preco li {
+    font-size: 1.2rem;
 }
 
 .container_preco .button__agendar {
