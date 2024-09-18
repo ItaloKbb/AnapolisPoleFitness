@@ -130,8 +130,8 @@ nav a {
     align-items: center;
     width: auto;
     height: 90vh;
-    /*background: var(--background-degrade1);*/
-    background: url('../assets/images/banner.png') no-repeat center center/cover;
+    background: var(--background-degrade1);
+    /*background: url('../assets/images/banner.png') no-repeat center center/cover;*/
     /* background: url('../assets/images/GettyImages-1229275252.png') no-repeat center center/cover; */
     padding: 5rem 1rem;
     padding-top: 70px;
@@ -217,9 +217,12 @@ nav a {
 .colaboradores__list .card {
     border-color: var(--primary-color);
 }
-.colaboradores__list img {
-    width: 16rem;
+
+.colaboradores__image{
+    display: flex;
+    width: auto;
     height: auto;
+
 }
 .colaboradores__list h5{
     font-size: 1.5rem;
