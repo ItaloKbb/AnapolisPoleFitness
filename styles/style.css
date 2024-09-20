@@ -36,14 +36,6 @@
 
 @font-face {
     font-family: 'Poppins';
-    src: url('../assets/fonts/Poppins-ExtraBoldItalic.ttf') format('truetype');
-    font-weight: 800;
-    /* Extra Bold Italic */
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Poppins';
     src: url('../assets/fonts/Poppins-Italic.ttf') format('truetype');
     font-weight: 400;
     /* Regular Italic */
@@ -100,7 +92,7 @@ h2 {
 /* Navbar */
 nav {
     font-size: 1rem !important;
-    background-color: transparent;
+    background-color: var(--background-degrade1);
     position: absolute !important;
     width: 100%;
     z-index: 1000;
