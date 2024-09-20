@@ -98,30 +98,62 @@ h2 {
 }
 
 /* Navbar */
-.navbar-div {
-    display: flex;
-    justify-content: center;
-}
-
 nav {
-    /* background-color: var(--background-color1); */
     font-size: 1rem !important;
+    background-color: transparent;
     position: absolute !important;
-    top: 0;
-    /* Posiciona a navbar no topo */
-    left: 0;
-    /* Alinha a navbar à esquerda */
     width: 100%;
-    /* Largura total da tela */
     z-index: 1000;
-    /* Garante que a navbar fique sobre outros elementos */
-    background-color: rgba(0, 0, 0, 0);
-    /* Cor de fundo com opacidade, ajuste conforme necessário */
 }
 
 nav a {
-    /* color: var(--text-color) !important; */
     color: white !important;
+}
+.navbar__container {
+    width: 80% !important;
+}
+
+.navbar__logo {
+    color: var(--text-color) !important;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navbar__item { 
+    margin-left: 20px;
+    text-align: right;
+}
+
+.navbar__link {
+    color: var(--text-color) !important;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+@media (min-width: 990px) {
+    .navbar-expand-lg .navbar-collapse{
+        display: flex;
+        justify-content: center;
+    }
+    nav {
+        width: 100%;
+        z-index: 1000;
+    }
+    
+}
+@media (max-width: 990px) {
+    .navbar__container ul{
+        background-color: var(--background-color1);
+        border-radius: 8px;
+        margin-top: 1rem;
+        padding: 1rem 2rem;
+        width: auto;
+    }
+    
+    .navbar__container a{
+        color: var(--text-color) !important;
+        text-align: right;
+    }
 }
 
 /* Hero Section */
