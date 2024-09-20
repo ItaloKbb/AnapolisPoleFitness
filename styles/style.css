@@ -92,8 +92,7 @@ h2 {
 /* Navbar */
 nav {
     font-size: 1rem !important;
-    background-color: var(--background-degrade1);
-    position: absolute !important;
+    background: var(--background-degrade1) !important;
     width: 100%;
     z-index: 1000;
 }
@@ -137,16 +136,7 @@ nav a {
 }
 
 @media (max-width: 990px) {
-    .navbar__container ul {
-        background-color: var(--background-color1);
-        border-radius: 8px;
-        margin-top: 1rem;
-        padding: 1rem 2rem;
-        width: auto;
-    }
-
     .navbar__container a {
-        color: var(--text-color) !important;
         text-align: right;
     }
 }
@@ -160,8 +150,7 @@ nav a {
     background: var(--background-degrade1);
     /*background: url('../assets/images/banner.png') no-repeat center center/cover;*/
     /* background: url('../assets/images/GettyImages-1229275252.png') no-repeat center center/cover; */
-    padding: 5rem 1rem;
-    padding-top: 70px;
+    padding: 0 1rem 0 1rem;
     /* Ajuste o padding para corresponder à altura da navbar */
 }
 
