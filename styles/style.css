@@ -1,6 +1,6 @@
 :root {
     --primary-color: #5d2a97;
-    --primary-color-hover: #6d0c6d;
+    --primary-color-hover: #35115f;
     --secondary-color: #8d168d;
     --text-color: #300652;
     --background-color1: #faebfa;
@@ -109,6 +109,7 @@ nav {
 nav a {
     color: white !important;
 }
+
 .navbar__container {
     width: 80% !important;
 }
@@ -119,7 +120,7 @@ nav a {
     font-weight: bold;
 }
 
-.navbar__item { 
+.navbar__item {
     margin-left: 20px;
     text-align: right;
 }
@@ -131,26 +132,28 @@ nav a {
 }
 
 @media (min-width: 990px) {
-    .navbar-expand-lg .navbar-collapse{
+    .navbar-expand-lg .navbar-collapse {
         display: flex;
         justify-content: center;
     }
+
     nav {
         width: 100%;
         z-index: 1000;
     }
-    
+
 }
+
 @media (max-width: 990px) {
-    .navbar__container ul{
+    .navbar__container ul {
         background-color: var(--background-color1);
         border-radius: 8px;
         margin-top: 1rem;
         padding: 1rem 2rem;
         width: auto;
     }
-    
-    .navbar__container a{
+
+    .navbar__container a {
         color: var(--text-color) !important;
         text-align: right;
     }
@@ -250,17 +253,19 @@ nav a {
     border-color: var(--primary-color);
 }
 
-.colaboradores__image{
+.colaboradores__image {
     display: flex;
     width: auto;
     height: auto;
 
 }
-.colaboradores__list h5{
+
+.colaboradores__list h5 {
     font-size: 1.5rem;
     color: var(--text-color);
 }
-.colaboradores__list p{
+
+.colaboradores__list p {
     font-size: 1rem;
     color: var(--text-color);
 }
@@ -284,7 +289,7 @@ nav a {
     /*     background-color: var(--background-color2); */
     position: relative;
     z-index: 1;
-  /*   background: url('../assets/images/padrao.jpg') no-repeat center center/cover; */
+    /*   background: url('../assets/images/padrao.jpg') no-repeat center center/cover; */
     padding: 3rem 0;
 }
 
@@ -356,7 +361,27 @@ nav a {
 .localizacao p {
     font-size: 1rem;
     padding: 20px;
+    color: var(--text-color);
 }
+
+.localizacao iframe {
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* No desktop (telas grandes), a transição ocorre com hover */
+@media (min-width: 768px) {
+    .localizacao iframe:hover {
+        background-color: var(--secondary-color-hover);
+        transform: scale(1.05);
+    }
+}
+/* No mobile (telas pequenas), usamos a classe 'active' para transição */
+@media (max-width: 767px) {
+    .localizacao iframe.active {
+        transform: scale(1.05);
+    }
+}
+
 
 .section__localizacao {
     border-radius: 8px;
@@ -376,21 +401,38 @@ nav a {
 
 .preco-card {
     margin: 1rem 0;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
-.card-body{
+/* No desktop (telas grandes), a transição ocorre com hover */
+@media (min-width: 768px) {
+    .preco-card:hover {
+        transform: scale(1.01);
+    }
+}
+/* No mobile (telas pequenas), usamos a classe 'active' para transição */
+@media (max-width: 767px) {
+    .preco-card.active {
+        transform: scale(1.05);
+    }
+}
+
+.card-body {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 .card-body p {
     font-size: 1rem;
     margin: 0;
 }
 
 .card-text {
-    list-style-type: disc; /* Padrão: bolinhas */
-    padding-left: 20px; /* Ajusta o espaçamento à esquerda */
+    list-style-type: disc;
+    /* Padrão: bolinhas */
+    padding-left: 20px;
+    /* Ajusta o espaçamento à esquerda */
     text-align: left;
 }
 
@@ -419,6 +461,12 @@ nav a {
 .container_preco .button__agendar {
     font-size: 0.9rem;
     padding: 0.6rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.container_preco .button__agendar:hover {
+    background-color: var(--primary-color-hover);
+    transform: scale(1.05);
 }
 
 /* Vertente */
@@ -437,14 +485,29 @@ nav a {
 .container_vertente {
     width: 70%;
 }
-
 .container_vertente p {
     font-size: 1rem;
 }
 
-.container_vertente .card-body {
+.container_vertente .card {
+    border-color: var(--primary-color);
     color: var(--text-color);
+    transition: background-color 0.3s, transform 0.3s;
 }
+
+/* No desktop (telas grandes), a transição ocorre com hover */
+@media (min-width: 768px) {
+    .container_vertente .card:hover {
+        transform: scale(1.01);
+    }
+}
+/* No mobile (telas pequenas), usamos a classe 'active' para transição */
+@media (max-width: 767px) {
+    .container_vertente .card.active {
+        transform: scale(1.05);
+    }
+}
+
 
 blockquote {
     width: 50%;
@@ -461,17 +524,29 @@ blockquote {
     font-size: 1.5rem !important;
 }
 
-.agendar .card-header{
+.agendar .card-header {
     background: var(--background-degrade2);
     text-align: center;
     font-size: 1.2rem;
     color: var(--text-color);
+    border-color: var(--primary-color);
+}
+
+.agendar .card {
+    border-color: var(--primary-color);
 }
 
 .agendar .button__agendar {
     width: 40%;
     min-width: 200px;
+    transition: background-color 0.3s, transform 0.3s;
 }
+
+.agendar .button__agendar:hover {
+    background-color: var(--primary-color-hover);
+    transform: scale(1.05);
+}
+
 
 .agendar .container {
     width: 90%;
@@ -496,6 +571,11 @@ blockquote {
     cursor: pointer;
     padding: 0 0.2rem;
     width: 50px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.05);
 }
 
 .social-icons {
