@@ -20,13 +20,10 @@ window.addEventListener('scroll', function() {
             });
         }
 
-        // Ativa os itens do portfolio
         activateVisibleItems('.container_vertente .card');
 
-        // Ativa os cards das etapas
         activateVisibleItems('.preco-card');
 
-        // Ativa os cards das etapas
         activateVisibleItems('.localizacao iframe');
     }
 });

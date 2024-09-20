@@ -95,6 +95,7 @@ nav {
     background: var(--background-degrade1) !important;
     width: 100%;
     z-index: 1000;
+    padding: 2rem 0;
 }
 
 nav a {
@@ -152,6 +153,11 @@ nav a {
     /* background: url('../assets/images/GettyImages-1229275252.png') no-repeat center center/cover; */
     padding: 0 1rem 0 1rem;
     /* Ajuste o padding para corresponder à altura da navbar */
+}
+@media (max-width: 990px) {
+    .hero{
+     height: 70vh;
+    }
 }
 
 .hero__title {
