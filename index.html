@@ -18,25 +18,25 @@
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar__container navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+     <!-- Navbar -->
+    <nav class="navbar navbar-dark navbar-expand-lg">
+        <div class="container-fluid navbar__container">
+            <a class="navbar-brand navbar__logo" href="#"><img src="assets/images/icons/loop-m.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="true" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-div navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav nav justify-content-center me-auto mb-2 mb-lg-0">
+            <div class="collapse navbar-collapse navbar__list" id="navbarNavDropdown">
+                <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active navbar__link__color" href="#sobre-nos">Sobre Nós</a>
+                        <a class="nav-link" href="#sobre-nos">Sobre Nós</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#colaboradores">Colaboradores</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="#espaco">Espaço</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="#vertentes">Vertentes</a>
                     </li>
@@ -49,7 +49,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#agendar">Agendar</a>
                     </li>
-
                 </ul>
             </div>
         </div>
@@ -84,7 +83,6 @@
             <div class="sobre-nos__text">
                 <h2 class="section__title">Sobre Nós</h2>
                 <div class="section-sobre__body">
-                    <!-- <img src="assets/images/sobre.jpg" class="card-img-top" alt="..."> -->
                     <div>
                         <p class="section__description">
 
@@ -99,32 +97,6 @@
                             alunas alcancem seus objetivos fitness com confiança e prazer, superando-se e se
                             divertindo a cada aula.
                         </p>
-                        <!-- <p class="section__description">
-                            Pioneira na cidade, o Anápolis Pole Fitness, desde 2016, transforma a vida de mulheres
-                            através
-                            de uma metodologia própria, planejada especialmente para você, mulher, que já pratica
-                            esportes
-                            ou que deseja sair do sedentarismo com uma atividade física diferente e divertida! Nossa
-                            missão
-                            é proporcionar uma jornada de transformação, focada na saúde, autoestima, condicionamento
-                            físico
-                            e na dança.
-                        </p>
-                        <p class="section__description">
-                            Aqui, acreditamos que o exercício físico vai além de uma simples rotina. Nossas aulas de
-                            pole
-                            dance são projetadas para desafiar seu corpo, fortalecer seus músculos e, ao mesmo tempo,
-                            promover o autoconhecimento e o cuidado consigo mesma. Cada movimento no pole não é apenas
-                            uma
-                            forma de ganhar força e resistência, mas também uma celebração da sua individualidade e do
-                            seu
-                            poder pessoal.
-                        </p>
-                        <p class="section__description">
-                            Queremos que cada aluna se sinta confiante, saudável e motivada a alcançar seus objetivos de
-                            fitness de maneira única e prazerosa. Junte-se a nós nessa jornada de autoconhecimento e
-                            fortalecimento, onde cada aula é uma oportunidade de se superar e, claro, se divertir!
-                        </p> -->
                     </div>
                 </div>
 
@@ -140,7 +112,7 @@
                 <!-- Colaboradores serão listados aqui -->
                 <div class="card mb-3">
                     <div class="row g-0">
-                        <div class="col-md-4">
+                        <div class="col-md-4 colaboradores__image">
                             <img src="assets/images/professoras/prof-anya.jpeg" class="img-fluid rounded-start"
                                 alt="...">
                         </div>
@@ -239,7 +211,7 @@
     </section>
 
     <!-- Conheça Nosso Espaço Section -->
-    <section id="espaco" class="espaco">
+    <!-- <section id="espaco" class="espaco">
         <div class="container">
             <h2 class="section__title">Conheça Nosso Espaço Físico</h2>
             <div id="carouselExampleCaptions" class="carousel slide carousel-container">
@@ -307,7 +279,7 @@
                 </button>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- Vertente Section -->
     <section id="vertentes" class="vertente">
@@ -474,38 +446,37 @@
     <section id="planos" class="preco">
         <div class="container_preco">
             <h2 class="section__title">Confira nossos Planos</h2>
+            
             <div class="card text-center preco-card">
                 <div class="card-header">
-                    Semestral
+                    Plano GOLD
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">1x por semana 6x R$ 100,00</h5>
-                    <p class="card-text">4 free passes de pole dance pra você <br>
-                        3 free passes de dança do ventre pra você <br>
-                        3 free passes para amigas <br>
-                        férias de 15 dias <br>
-                        direito de transferência de plano <br>
-                    </p>
-                </div>
-                <div class="card-footer text-body-secondary">
-                    ou R$160,00 no plano mensal
+                    <h5 class="card-title">2x por semana <br> 6x R$ 170,00</h5>
+                    <ul class="card-text">
+                        <li>6 free passes de pole dance pra você</li>
+                        <li>3 free passes de dança do ventre pra você</li>
+                        <li>6 free passes para amigas</li>
+                        <li>férias de 15 dias</li>
+                        <li>direito de transferência de plano</li>
+                    </ul>
+                    <p>ou R$235,00 no plano mensal</p>
                 </div>
             </div>
             <div class="card text-center preco-card">
                 <div class="card-header">
-                    Semestral
+                    Plano SILVER
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">2x por semana 6x R$ 170,00</h5>
-                    <p class="card-text">6 free passes de pole dance pra você <br>
-                        3 free passes de dança do ventre pra você <br>
-                        6 free passes para amigas <br>
-                        férias de 15 dias <br>
-                        direito de transferência de plano <br>
-                    </p>
-                </div>
-                <div class="card-footer text-body-secondary">
-                    ou R$235,00 no plano mensal
+                    <h5 class="card-title">1x por semana <br> 6x R$ 100,00</h5>
+                    <ul class="card-text">
+                        <li>4 free passes de pole dance pra você</li>
+                        <li>3 free passes de dança do ventre pra você</li>
+                        <li>3 free passes para amigas</li>
+                        <li>férias de 15 dias</li>
+                        <li>direito de transferência de plano</li>
+                    </ul>
+                    <p>ou R$160,00 no plano mensal</p>
                 </div>
             </div>
             <div class="card text-center preco-card">
@@ -513,9 +484,10 @@
                     Aula experimental
                 </div>
                 <div class="card-body">
-                    <p class="card-text">1 aula experimental R$30,00 <br>
-                        2 aulas experimentais R$38,00
-                    </p>
+                    <ul class="card-text">
+                        <li>1 aula experimental R$30,00</li>
+                        <li>2 aulas experimentais R$38,00</li>
+                    </ul>
                     <button href="https://wa.me/message/IGLTB6Y5XBE4H1" role="button" class=" 
                         button__agendar">Agende uma aula experimental</button>
                 </div>
@@ -569,10 +541,11 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p class="footer__text">&copy; 2024 Minha Empresa. Todos os direitos reservados.</p>
+            <p class="footer__text">&copy; 2024 Anápolis Pole Fitness. Todos os direitos reservados.</p>
         </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
