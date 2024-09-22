@@ -36,6 +36,7 @@ function carregarHeroText() {
             let frasesHero = ''; // String para armazenar todas as frases
             const keys = Object.keys(data.hero); // Pega as chaves do objeto "hero"
             
+            frasesHero += '<p class="hero__subtitle">'
             // Percorre todas as chaves do objeto "hero"
             for (let i = 0; i < keys.length; i++) {
                 frasesHero += data.hero[keys[i]];
@@ -47,30 +48,103 @@ function carregarHeroText() {
             }
 
             // Insere o conteúdo do JSON no H1
-            document.getElementById('herotext').innerHTML = frasesHero;
+            document.getElementById('hero-text').innerHTML = frasesHero;
         })
         .catch(error => console.error('Erro ao carregar o JSON:', error));
 }
 
 // Função para carregar o JSON e inserir o texto no H1
-function carregarSobreMimText() {
+function carregarSobreText() {
     fetch('dados.json')
         .then(response => response.json()) // Lê o arquivo JSON
         .then(data => {
-            let frasessobremim = ''; // String para armazenar todas as frases
-            const keys = Object.keys(data.sobremim); // Pega as chaves do objeto "sobremim"
+            let frasessobre = ''; // String para armazenar todas as frases
+            const keys = Object.keys(data.sobre); // Pega as chaves do objeto "sobremim"
             
             // Percorre todas as chaves do objeto "sobremim"
             for (let i = 0; i < keys.length; i++) {
-                frasessobremim += '<p class="section__description">';
-                frasessobremim += data.sobremim[keys[i]];
+                frasessobre += '<p class="section__description">';
+                frasessobre += data.sobre[keys[i]];
             }
             // Insere o conteúdo do JSON no H1
-            document.getElementById('section__description').innerHTML = frasessobremim;
+            document.getElementById('section__description').innerHTML = frasessobre;
+        })
+        .catch(error => console.error('Erro ao carregar o JSON:', error));
+}
+
+function carregarCardImagemLateral() { 
+    fetch('dados.json')
+        .then(response => response.json()) // Lê o arquivo JSON
+        .then(data => {
+            let cards = ''; // String para armazenar todas as frases
+            const keys = Object.keys(data['card-imagem-lateral']); // Pega as chaves do objeto "card-imagem-lateral"
+            
+            // Percorre todas as chaves do objeto "card-imagem-lateral"
+            for (let i = 0; i < keys.length; i++) {
+                cards += '<div class="card mb-3"><div class="row g-0">';
+                let cardsImage = '<div class="col-md-4 colaboradores__image">' +
+                    '<img src="' + data['card-imagem-lateral'][keys[i]]['link-image'] + '" class="img-fluid rounded-start" alt="Imagem colaborador"></div>';
+                cards += cardsImage;
+                cards += '<div class="col-md-8"><div class="card-body">';
+                cards += '<h5 class="card-title">' + data['card-imagem-lateral'][keys[i]]['card-title'] + '</h5>';
+
+                // Pega o objeto card-text e percorre suas chaves
+                let cardTexts = data['card-imagem-lateral'][keys[i]]['card-text'];
+                let cardTextContent = '';
+
+                // Percorre os textos dentro de "card-text"
+                for (let textKey in cardTexts) {
+                    if (cardTexts.hasOwnProperty(textKey)) {
+                        cardTextContent += '<p class="card-text">' + cardTexts[textKey] + '</p>';
+                    }
+                }
+
+                // Adiciona o conteúdo ao card
+                cards += cardTextContent;
+                cards += '</div></div></div></div>';
+            }
+
+            // Insere o conteúdo no elemento com ID "colaboradores-list"
+            document.getElementById('colaboradores-list').innerHTML = cards;
+        })
+        .catch(error => console.error('Erro ao carregar o JSON:', error));
+}
+
+function carregarCardGenerico() { 
+    fetch('dados.json')
+        .then(response => response.json()) // Lê o arquivo JSON
+        .then(data => {
+            let cards = ''; // String para armazenar todas as frases
+            const keys = Object.keys(data['card-generico']); // Pega as chaves do objeto "card-generico"
+            
+            // Percorre todas as chaves do objeto "card-imagem-lateral"
+            for (let i = 0; i < keys.length; i++) {
+                cards += '<div class="card text-center mb-3"><div class="card-body">';
+                cards += '<h5 class="card-title">' + data['card-generico'][keys[i]]['card-title'] + '</h5>';
+
+                // Pega o objeto card-text e percorre suas chaves
+                let cardTexts = data['card-generico'][keys[i]]['card-text'];
+                let cardTextContent = '';
+
+                // Percorre os textos dentro de "card-text"
+                for (let textKey in cardTexts) {
+                    if (cardTexts.hasOwnProperty(textKey)) {
+                        cardTextContent += '<p class="card-text">' + cardTexts[textKey] + '</p>';
+                    }
+                }
+
+                // Adiciona o conteúdo ao card
+                cards += cardTextContent;
+                cards += '</div></div>';
+            }
+
+            // Insere o conteúdo no elemento com ID "colaboradores-list"
+            document.getElementById('vertentes-list').innerHTML = cards;
         })
         .catch(error => console.error('Erro ao carregar o JSON:', error));
 }
 
 // Chama a função para carregar o conteúdo
 carregarHeroText();
-carregarSobreMimText();
+carregarSobreText();
+carregarCardImagemLateral();

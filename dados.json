@@ -3,8 +3,47 @@
         "1": "A avançada de hoje é a iniciante que nunca desistiu!",
         "2": "Divirta-se com o processo"
     },
-    "sobremim": {
+    "sobre": {
         "1": "Desde 2016, o Anápolis Pole Fitness transforma a vida de mulheres com uma metodologia própria, voltada para quem pratica esportes ou quer sair do sedentarismo com uma atividade divertida. Nossa missão é oferecer uma jornada focada na saúde, autoestima, condicionamento físico e dança. Acreditamos que o exercício vai além da rotina: nossas aulas desafiam o corpo, fortalecem músculos e promovem autoconhecimento e cuidado.", 
         "2": "Cada movimento no pole celebra a individualidade e o poder pessoal. Queremos que nossas alunas alcancem seus objetivos fitness com confiança e prazer, superando-se e se divertindo a cada aula."
+    },
+    "card-imagem-lateral": {
+        "1": {
+            "link-image": "https://theloopcode.com/public/anapolispolefitness/professoras/anya.webp",
+            "card-title": "Professora Anya",
+            "card-text": {"1": "Desde a primeira aula de Pole Dance, em 2017 no Anápolis Pole Fitness, Anya se entregou à paixão pelo esporte. Com dedicação, chegou a fazer até seis aulas por semana e expandiu seus conhecimentos com um mês de treinamento intensivo na Rússia. Amante das três vertentes principais, ministra aulas de Pole Fitness, Pole Flow e Exotic Flow, criando coreografias e combos únicos. Sempre busca a perfeição técnica, revendo seus próprios vídeos para corrigir cada detalhe. Uma verdadeira inspiração para todos que a conhecem! 😍🤩🥰"}
+        },
+        "2": {
+            "link-image": "https://theloopcode.com/public/anapolispolefitness/professoras/isa.webp",
+            "card-title": "Professora Isabella",
+            "card-text": {"1": "Especialista em Pole Spin, Isa traz sua energia vibrante para as aulas de Pole Fitness nível básico e intermediário. Com aulas às segundas e quartas à noite e aos sábados de manhã, Isa encanta suas alunas com técnica e carisma. Quem já teve a sorte de conhecê-la sabe o quanto ela é apaixonante, e quem ainda não conhece, está prestes a se apaixonar! 🥰"}
+        },
+        "3": {
+            "link-image": "https://theloopcode.com/public/anapolispolefitness/professoras/lory.webp",
+            "card-title": "Professora Lory",
+            "card-text": {"1": "Desde 2014, nossa professora Especialista em Bem-Estar Feminino domina as artes da dança do ventre e do Tribal Fusion e Pole Flow. Com um olhar cuidadoso para a saúde da mulher, suas aulas proporcionam bem-estar físico e emocional, ajudando suas alunas a resgatar a feminilidade e a autoconfiança."}
+        },
+        "4": {
+            "link-image": "https://theloopcode.com/public/anapolispolefitness/professoras/maju.webp",
+            "card-title": "Professora Maju",
+            "card-text": {"1": "Nossa profe maravilhosa Maju pratica pole dance há exatos 10 anos, já fez várias apresentações, inclusive para mais de 10 mil pessoas presentes em um desfile de carnaval, especializou em pole sensual e exotic em workshops em São Paulo, ama dançar de salto ao som de rock 🤘🏽 ✨ Ministra aulas de Exotic flow e pole fitness."}
+        },
+        "5": {
+            "link-image": "https://theloopcode.com/public/anapolispolefitness/professoras/luci.webp",
+            "card-title": "Luciane Puglisi",
+            "card-text": {
+                "1": "O que dizer dessa mulher maravilhosa. Pratica pole há 12 anos, iniciou no vertical Life Studio. Em 2010 fundou o Anapolis Pole Fitness criando a metodologia própria do studio.",
+                "2": "Fez cursos e workshops com várias pole dancers renomadas do Brasil como Vanessa Costa, Karen Belini, Camila Fortunado, Monique Medeiros…",
+                "3": "Nossa mãezona pronta pra atender e ajudar no que for preciso. Está sem ministrar aulas desde o nascimento da mascotinha Natália em 2023 🥰 Mas não desanimou, cuida e gerencia mesmo a distância (atualmente mora em Goiânia) do nosso espaço maravilhoso."
+            }
+        }
+        
+    },
+    "card-generico": {
+        "1": {
+            "card-title": "Professora Anya",
+            "card-text": {"1": "Teste: Desde a primeira aula de Pole Dance, em 2017 no Anápolis Pole Fitness, Anya se entregou à paixão pelo esporte. Com dedicação, chegou a fazer até seis aulas por semana e expandiu seus conhecimentos com um mês de treinamento intensivo na Rússia. Amante das três vertentes principais, ministra aulas de Pole Fitness, Pole Flow e Exotic Flow, criando coreografias e combos únicos. Sempre busca a perfeição técnica, revendo seus próprios vídeos para corrigir cada detalhe. Uma verdadeira inspiração para todos que a conhecem! 😍🤩🥰"},
+            "customHtml": ""
+        }
     }
 }
