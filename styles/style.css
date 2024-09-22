@@ -92,16 +92,18 @@ h2 {
 
 /* Navbar */
 nav {
+    
     font-size: 1rem !important;
-    background: var(--background-degrade3) !important;
-   /*  background-color: var(--background-color2) !important; */
+    background: transparent;
     width: 100%;
     z-index: 1000;
     margin: 0 !important;
+    padding-top: 20px; 
+    padding-bottom: 20px;
 }
 
 nav a {
-    color: var(--text-color) !important;
+    color: white !important;
     font-weight: 500 !important;
 }
 
@@ -133,6 +135,7 @@ nav a {
     }
 
     nav {
+        position: absolute !important;
         width: 100%;
         z-index: 1000;
     }
@@ -140,19 +143,92 @@ nav a {
 }
 
 @media (max-width: 990px) {
-    .navbar__container a {
-        text-align: right;
+    nav{
+        background-color: var(--background-color1);
     }
+    nav a {
+        color: var(--text-color) !important;
+    }
+    .navbar__container {
+        padding: 0 0;
+    }
+
+
+    /* .navbar-nav {
+        background-color: var(--background-color1);
+        border-radius: 8px;
+        width: 10rem;
+        margin-top: 1rem;
+    }
+    nav a {
+        color: var(--text-color) !important;
+        padding-right: 1rem !important;
+        font-weight: 500 !important;
+        text-align: end;
+    }
+
+    .navbar__list{
+        display: flex;
+        justify-content: flex-end;
+    } */
+    
+
+    /* .navbar-nav {
+        background-color: var(--background-color1);
+        border-radius: 8px;
+        width: 40%;
+        margin-top: 1rem;
+    }
+    .navbar__container a {
+        color: var(--text-color) !important;
+        padding-left: 1rem !important;
+        text-align: right;
+        font-weight: 500 !important;
+    }
+
+    .navbar-nav {
+        background-color: #faebfa;
+    }
+
+
+    .navbar__container {
+        width: 20% !important; 
+    }
+
+    .navbar-collapse {
+        top: 0;
+        right: 0;
+        height: 100%; 
+        display: flex;
+        flex-direction: column; 
+        justify-content: center; 
+        background-color: #faebfa; 
+        padding: 20px;
+    } */
 }
 
 /* Hero Section */
 .hero {
+    position: relative;
     display: flex;
     align-items: center;
     width: auto;
     height: 90vh;
     background: var(--background-degrade1);
     padding: 0 1rem 0 1rem;
+}
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Cor translúcida sobre a imagem */
+    z-index: 1;
+}
+.container_hero {
+    z-index: 2; /* Para o texto e o botão ficarem acima da sobreposição */
 }
 @media (max-width: 990px) {
     .hero{
@@ -283,15 +359,18 @@ nav a {
 /* Conheça Nosso Espaço */
 
 .espaco {
-    /*     background-color: var(--background-color2); */
     position: relative;
     z-index: 1;
-    /*   background: url('../assets/images/padrao.jpg') no-repeat center center/cover; */
     padding: 3rem 0;
 }
 
 .carousel{
     width:40%;
+}
+@media (max-width: 1000px) {
+    .carousel {
+        width: 80%;
+    }
 }
 
 .espaco .container {
