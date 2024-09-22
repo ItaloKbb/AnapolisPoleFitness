@@ -116,9 +116,9 @@ function carregarCardGenerico() {
         .then(data => {
             let cards = ''; // String para armazenar todas as frases
             const keys = Object.keys(data['card-generico']); // Pega as chaves do objeto "card-generico"
-            
+            cards += '<h2 class="section__title">Conheça nossas vertentes</h2>'
             // Percorre todas as chaves do objeto "card-imagem-lateral"
-            for (let i = 0; i < keys.length; i++) {
+            for (let i = 0; i < keys.length; i++) {   
                 cards += '<div class="card text-center mb-3"><div class="card-body">';
                 cards += '<h5 class="card-title">' + data['card-generico'][keys[i]]['card-title'] + '</h5>';
 
@@ -127,14 +127,17 @@ function carregarCardGenerico() {
                 let cardTextContent = '';
 
                 // Percorre os textos dentro de "card-text"
+                cardTextContent += '<p class="card-text">';
                 for (let textKey in cardTexts) {
                     if (cardTexts.hasOwnProperty(textKey)) {
-                        cardTextContent += '<p class="card-text">' + cardTexts[textKey] + '</p>';
+                        cardTextContent += cardTexts[textKey] + '<br>';
                     }
                 }
+                cardTextContent += '</p>';
 
                 // Adiciona o conteúdo ao card
                 cards += cardTextContent;
+                cards += data['card-generico'][keys[i]]['customHtml'];
                 cards += '</div></div>';
             }
 
@@ -148,3 +151,4 @@ function carregarCardGenerico() {
 carregarHeroText();
 carregarSobreText();
 carregarCardImagemLateral();
+carregarCardGenerico();

@@ -41,8 +41,28 @@
     },
     "card-generico": {
         "1": {
-            "card-title": "Professora Anya",
-            "card-text": {"1": "Teste: Desde a primeira aula de Pole Dance, em 2017 no Anápolis Pole Fitness, Anya se entregou à paixão pelo esporte. Com dedicação, chegou a fazer até seis aulas por semana e expandiu seus conhecimentos com um mês de treinamento intensivo na Rússia. Amante das três vertentes principais, ministra aulas de Pole Fitness, Pole Flow e Exotic Flow, criando coreografias e combos únicos. Sempre busca a perfeição técnica, revendo seus próprios vídeos para corrigir cada detalhe. Uma verdadeira inspiração para todos que a conhecem! 😍🤩🥰"},
+            "card-title": "Pole Dance Fitness",
+            "card-text": {
+                "1": "Na aula de Pole Fitness a aluna aprende giros, poses, transições e acrobacias, é mais voltado para o esporte.",
+                "2": "Nossa metodologia vai do básico 1 ao avançado e você pode escolher em ter horário fixo ou flexível."
+            },
+            "customHtml": "<button type='button' class='button__agendar' data-bs-toggle='modal' data-bs-target='#exampleModal'> Conheça mais </button>"
+        },
+        "2": {
+            "card-title": "Pole Flow",
+            "card-text": {
+                "1": "O Pole Flow é uma de dança que se concentra na fluidez, conexão e transição suave entre os movimentos. Fortalece corpo e mente explorando sua expressão artística de uma maneira única e envolvente.",
+                "2": "Nossas turmas são fixas garantindo um acompanhamento contínuo e também a construção de laços fortes com suas colegas de turma.",
+                "3": "Turmas fixas são perfeitas para quem deseja aprender uma coreografia do início ao fim."
+            },
+            "customHtml": "<button type='button' class='button__agendar' data-bs-toggle='modal' data-bs-target='#exampleModal'> Conheça mais </button>"
+        },
+        "3": {
+            "card-title": "Exotic Flow",
+            "card-text": {
+                "1": "O exotic flow é uma dança que combina movimentos sensuais e fluidos com elementos de danca contemporânea, força e acrobacias no pole podendo usar salto alto. Essa aula é para alunas a partir do básico 2.",
+                "2": "Assim como no flow as turmas são fixas garantindo um acompanhamento contínuo e o desenvolvimento da coreografia do início ao fim."
+            },
             "customHtml": ""
         }
     }
