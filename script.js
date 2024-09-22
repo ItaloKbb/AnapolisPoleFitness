@@ -29,8 +29,13 @@ window.addEventListener('scroll', function() {
 });
 
 // Função para carregar o JSON e inserir o texto no H1
+function getURLjson() {
+    return 'https://theloopcode.com/public/dados.json';
+}
+
+// Função para carregar o JSON e inserir o texto no H1
 function carregarHeroText() {
-    fetch('dados.json')
+    fetch(getURLjson())
         .then(response => response.json()) // Lê o arquivo JSON
         .then(data => {
             let frasesHero = ''; // String para armazenar todas as frases
@@ -55,7 +60,7 @@ function carregarHeroText() {
 
 // Função para carregar o JSON e inserir o texto no H1
 function carregarSobreText() {
-    fetch('dados.json')
+    fetch(getURLjson())
         .then(response => response.json()) // Lê o arquivo JSON
         .then(data => {
             let frasessobre = ''; // String para armazenar todas as frases
@@ -73,7 +78,7 @@ function carregarSobreText() {
 }
 
 function carregarCardImagemLateral() { 
-    fetch('dados.json')
+    fetch(getURLjson())
         .then(response => response.json()) // Lê o arquivo JSON
         .then(data => {
             let cards = ''; // String para armazenar todas as frases
@@ -111,7 +116,7 @@ function carregarCardImagemLateral() {
 }
 
 function carregarCardGenerico() { 
-    fetch('dados.json')
+    fetch(getURLjson())
         .then(response => response.json()) // Lê o arquivo JSON
         .then(data => {
             let cards = ''; // String para armazenar todas as frases
