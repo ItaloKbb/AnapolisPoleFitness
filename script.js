@@ -27,3 +27,50 @@ window.addEventListener('scroll', function() {
         activateVisibleItems('.localizacao iframe');
     }
 });
+
+// Função para carregar o JSON e inserir o texto no H1
+function carregarHeroText() {
+    fetch('dados.json')
+        .then(response => response.json()) // Lê o arquivo JSON
+        .then(data => {
+            let frasesHero = ''; // String para armazenar todas as frases
+            const keys = Object.keys(data.hero); // Pega as chaves do objeto "hero"
+            
+            // Percorre todas as chaves do objeto "hero"
+            for (let i = 0; i < keys.length; i++) {
+                frasesHero += data.hero[keys[i]];
+                
+                // Adiciona <br> apenas se não for o último item
+                if (i < keys.length - 1) {
+                    frasesHero += "<br>";
+                }
+            }
+
+            // Insere o conteúdo do JSON no H1
+            document.getElementById('herotext').innerHTML = frasesHero;
+        })
+        .catch(error => console.error('Erro ao carregar o JSON:', error));
+}
+
+// Função para carregar o JSON e inserir o texto no H1
+function carregarSobreMimText() {
+    fetch('dados.json')
+        .then(response => response.json()) // Lê o arquivo JSON
+        .then(data => {
+            let frasessobremim = ''; // String para armazenar todas as frases
+            const keys = Object.keys(data.sobremim); // Pega as chaves do objeto "sobremim"
+            
+            // Percorre todas as chaves do objeto "sobremim"
+            for (let i = 0; i < keys.length; i++) {
+                frasessobremim += '<p class="section__description">';
+                frasessobremim += data.sobremim[keys[i]];
+            }
+            // Insere o conteúdo do JSON no H1
+            document.getElementById('section__description').innerHTML = frasessobremim;
+        })
+        .catch(error => console.error('Erro ao carregar o JSON:', error));
+}
+
+// Chama a função para carregar o conteúdo
+carregarHeroText();
+carregarSobreMimText();
