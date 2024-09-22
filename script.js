@@ -30,29 +30,32 @@ window.addEventListener('scroll', function() {
 
 // Função para carregar o JSON e inserir o texto no H1
 function getURLjson() {
-    return 'https://theloopcode.com/public/dados.json';
+    return 'dados.json';
 }
 
-// Função para carregar o JSON e inserir o texto no H1
 function carregarHeroText() {
     fetch(getURLjson())
         .then(response => response.json()) // Lê o arquivo JSON
         .then(data => {
             let frasesHero = ''; // String para armazenar todas as frases
-            const keys = Object.keys(data.hero); // Pega as chaves do objeto "hero"
+            const keys = Object.keys(data['hero']['hero-text']); // Pega as chaves do objeto "hero-text"
             
-            frasesHero += '<p class="hero__subtitle">'
-            // Percorre todas as chaves do objeto "hero"
+            frasesHero += '<p class="hero__subtitle">';
+            // Percorre todas as chaves do objeto "hero-text"
             for (let i = 0; i < keys.length; i++) {
-                frasesHero += data.hero[keys[i]];
+                frasesHero += data['hero']['hero-text'][keys[i]];
                 
                 // Adiciona <br> apenas se não for o último item
                 if (i < keys.length - 1) {
                     frasesHero += "<br>";
                 }
             }
+            frasesHero += '</p>';
 
-            // Insere o conteúdo do JSON no H1
+            // Adiciona o botão customizado vindo do JSON
+            frasesHero += data['hero']['customHtml'];
+
+            // Insere o conteúdo do JSON no elemento com ID 'hero-text'
             document.getElementById('hero-text').innerHTML = frasesHero;
         })
         .catch(error => console.error('Erro ao carregar o JSON:', error));

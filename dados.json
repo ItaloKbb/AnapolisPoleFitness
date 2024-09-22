@@ -1,7 +1,10 @@
 {
     "hero": {
-        "1": "A avançada de hoje é a iniciante que nunca desistiu!",
-        "2": "Divirta-se com o processo"
+        "hero-text":{
+            "1": "A avançada de hoje é a iniciante que nunca desistiu!",
+            "2": "Divirta-se com o processo"
+        },
+        "customHtml": "<a href='https://wa.me/message/IGLTB6Y5XBE4H1' class='button__agendar'>Agende uma Aula</a>"
     },
     "sobre": {
         "1": "Desde 2016, o Anápolis Pole Fitness transforma a vida de mulheres com uma metodologia própria, voltada para quem pratica esportes ou quer sair do sedentarismo com uma atividade divertida. Nossa missão é oferecer uma jornada focada na saúde, autoestima, condicionamento físico e dança. Acreditamos que o exercício vai além da rotina: nossas aulas desafiam o corpo, fortalecem músculos e promovem autoconhecimento e cuidado.", 
