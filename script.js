@@ -85,7 +85,7 @@ function carregarCardImagemLateral() {
         .then(response => response.json()) // Lê o arquivo JSON
         .then(data => {
             let cards = ''; // String para armazenar todas as frases
-            const keys = Object.keys(data['card-imagem-lateral']); // Pega as chaves do objeto "card-imagem-lateral"
+            const keys = Object.keys(data['cardImageLeft']); // Pega as chaves do objeto "card-imagem-lateral"
             
             // Percorre todas as chaves do objeto "card-imagem-lateral"
             for (let i = 0; i < keys.length; i++) {
