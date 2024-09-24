@@ -91,13 +91,13 @@ function carregarCardImagemLateral() {
             for (let i = 0; i < keys.length; i++) {
                 cards += '<div class="card mb-3"><div class="row g-0">';
                 let cardsImage = '<div class="col-md-4 colaboradores__image">' +
-                    '<img src="' + data['card-imagem-lateral'][keys[i]]['link-image'] + '" class="img-fluid rounded-start" alt="Imagem colaborador"></div>';
+                    '<img src="' + data['cardImageLeft'][keys[i]]['link-image'] + '" class="img-fluid rounded-start" alt="Imagem colaborador"></div>';
                 cards += cardsImage;
                 cards += '<div class="col-md-8"><div class="card-body">';
-                cards += '<h5 class="card-title">' + data['card-imagem-lateral'][keys[i]]['card-title'] + '</h5>';
+                cards += '<h5 class="card-title">' + data['cardImageLeft'][keys[i]]['card-title'] + '</h5>';
 
                 // Pega o objeto card-text e percorre suas chaves
-                let cardTexts = data['card-imagem-lateral'][keys[i]]['card-text'];
+                let cardTexts = data['cardImageLeft'][keys[i]]['card-text'];
                 let cardTextContent = '';
 
                 // Percorre os textos dentro de "card-text"
